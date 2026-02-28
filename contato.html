@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | JM IMPORTS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">JM IMPORTS</a>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="rastreio.html">Rastreio</a>
+        <a href="sobre.html">Sobre</a>
+        <a class="active" href="contato.html">Contato</a>
+      </nav>
+      <a class="cart-chip" href="checkout.html">Carrinho: <span data-cart-count>0 item(ns)</span></a>
+    </div>
+  </header>
+
+  <main class="container section layout-2">
+    <section class="card">
+      <h1>Fale com a JM IMPORTS</h1>
+      <p class="section-subtitle">Envie sua dúvida, sugestão ou solicitação de parceria.</p>
+      <form data-contact-form>
+        <label>Nome<input required type="text" /></label>
+        <label>E-mail<input required type="email" /></label>
+        <label>Assunto<input required type="text" /></label>
+        <label>Mensagem<textarea required rows="6"></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+      </form>
+      <p data-contact-feedback></p>
+    </section>
+
+    <aside class="card">
+      <h2>Canais oficiais</h2>
+      <p>WhatsApp: (11) 99999-0000</p>
+      <p>E-mail: contato@jmimports.com.br</p>
+      <p>Atendimento: Seg a Sex, 9h às 18h</p>
+      <p>Instagram: @jmimports</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© 2026 JM IMPORTS. Todos os direitos reservados.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
