@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos | JM IMPORTS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">JM IMPORTS</a>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a class="active" href="produtos.html">Produtos</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="rastreio.html">Rastreio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="cart-chip" href="checkout.html">Carrinho: <span data-cart-count>0 item(ns)</span></a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">Catálogo JM IMPORTS</h1>
+    <p class="section-subtitle">Escolha sua cor favorita ou aproveite o kit promocional.</p>
+
+    <label for="filtro">Filtrar por:</label>
+    <select id="filtro" data-filter-color>
+      <option value="todos">Todos</option>
+      <option value="preta">Somente preta</option>
+      <option value="branca">Somente branca</option>
+      <option value="kit">Somente kit</option>
+    </select>
+
+    <div class="grid-products">
+      <article class="card product-card" data-color="preta">
+        <h3>Camiseta Dry Fit Preta</h3>
+        <p class="product-color">Unidade</p>
+        <p class="price">R$ 58,90 <span>/ unidade</span></p>
+        <div class="qty"><label>Qtd:</label><input data-qty type="number" min="1" value="1" /></div>
+        <div class="product-actions"><button class="btn btn-primary" data-add-product="preta">Adicionar</button></div>
+      </article>
+      <article class="card product-card" data-color="branca">
+        <h3>Camiseta Dry Fit Branca</h3>
+        <p class="product-color">Unidade</p>
+        <p class="price">R$ 58,90 <span>/ unidade</span></p>
+        <div class="qty"><label>Qtd:</label><input data-qty type="number" min="1" value="1" /></div>
+        <div class="product-actions"><button class="btn btn-primary" data-add-product="branca">Adicionar</button></div>
+      </article>
+      <article class="card product-card" data-color="kit">
+        <h3>Kit Dry Fit (2 camisetas)</h3>
+        <p class="product-color">Preta + Branca</p>
+        <p class="price">R$ 99,90 <span>/ kit com 2</span></p>
+        <div class="qty"><label>Qtd:</label><input data-qty type="number" min="1" value="1" /></div>
+        <div class="product-actions"><button class="btn btn-primary" data-add-product="kit">Adicionar</button></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© 2026 JM IMPORTS</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

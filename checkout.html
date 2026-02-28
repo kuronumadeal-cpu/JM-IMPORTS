@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | JM IMPORTS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">JM IMPORTS</a>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a class="active" href="checkout.html">Checkout</a>
+        <a href="rastreio.html">Rastreio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="cart-chip" href="checkout.html">Carrinho: <span data-cart-count>0 item(ns)</span></a>
+    </div>
+  </header>
+
+  <main class="container section layout-2">
+    <section class="card">
+      <h2>Finalizar pedido</h2>
+      <form data-checkout-form>
+        <label>Nome completo<input required type="text" /></label>
+        <label>Telefone / WhatsApp<input required type="tel" /></label>
+        <label>E-mail<input required type="email" /></label>
+        <label>CEP<input required type="text" /></label>
+        <label>Endereço<input required type="text" /></label>
+        <label>Número<input required type="text" /></label>
+        <label>Método de pagamento
+          <select required>
+            <option value="">Selecione</option>
+            <option>PIX</option>
+            <option>Cartão de crédito</option>
+            <option>Boleto</option>
+          </select>
+        </label>
+        <button class="btn btn-success" type="submit">Confirmar compra</button>
+      </form>
+      <p data-checkout-feedback></p>
+    </section>
+
+    <aside class="card">
+      <h2>Resumo do carrinho</h2>
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="summary-line"><span>Subtotal</span><strong data-subtotal>R$ 0,00</strong></p>
+      <p class="summary-line"><span>Frete</span><strong data-shipping>R$ 0,00</strong></p>
+      <p class="summary-line total"><span>Total</span><strong data-total>R$ 0,00</strong></p>
+      <button class="btn btn-outline" data-clear-cart>Limpar carrinho</button>
+    </aside>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Pagamento seguro e envio rastreado.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
